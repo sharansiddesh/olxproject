@@ -1,0 +1,27 @@
+{% extends 'home.html' %}
+{% load static %}
+<head>
+{% block title %}
+    <title>scooter</title>
+{% endblock %}
+</head>
+<body>
+    {% block content %}
+    <div style="position: absolute; bottom :10opx; left: 280px;">
+        <img src="{% static 'image/s1.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>25500 RS</h4>
+        <h6>2017-500km</h6>
+    </div>
+    <div style="position: absolute; bottom :10opx; left: 600px;">
+        <img src="{% static 'image/s2.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>60,000 RS</h4>
+        <h6>2018-25,500km</h6>
+    </div>
+    <div style="position: absolute; bottom :10opx; left: 913px;">
+        <img src="{% static 'image/s3.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>20,000 RS</h4>
+        <h6>2019-12,500km</h6>
+    </div>
+    {% endblock %}
+
+</body>

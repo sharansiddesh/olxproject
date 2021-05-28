@@ -1,0 +1,39 @@
+{% load static %}
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.olx.com">
+        <img src="{% static 'image/olx.png' %}}" alt="olx " width="30" height="24">
+      </a>
+      <div class="container-fluid" style="position: relative; top: -1px; left: -254px; width: 700px;" >
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Find Cars, Mobile Phones and more..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div>
+          <a href="https://www.olx.in/en" style="position: relative; right: 488px;" class="btn btn-outline-primary">Login</a>
+      </div> 
+    </div> 
+  </nav>
+  <div style="position: relative; left: 250px;">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'myapp:home' %}">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'myapp:motorcycle' %}">Motocycle</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'myapp:mobilephone' %}">Mobile phone</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'myapp:house' %}">FOR Sale:Houses&aparments</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'myapp:scooters' %}">Scooters</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'myapp:commercial' %}">Commercial & Other Vehicals</a>
+        </li>
+      </ul>
+  </div>

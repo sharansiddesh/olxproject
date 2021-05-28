@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+{% load static %}
+{% block title %}
+    <title>mobilephone</title>
+{% endblock %}
+
+
+<body>
+    
+    {% block content %}
+    <div style="position: absolute; bottom :10opx; left: 280px;">
+        <img src="{% static 'image/m1.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>15500 RS</h4>
+        <h6>iPhone 7 128GB|iPhone 66GB</h6>
+    </div>
+    <div style="position: absolute; bottom :10opx; left: 600px;">
+        <img src="{% static 'image/m2.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>12600RS</h4>
+        <h6>MI Redmi Note 10</h6>
+    </div>
+    <div style="position: absolute; bottom :10opx; left: 913px;">
+        <img src="{% static 'image/m3.jpg' %}" class="img-thumbnail" alt="..." style="height: 300px;width: 300px;">
+        <h4>9999RS</h4>
+        <h6>Samsung </h6>
+    </div>
+    {% endblock %}
+
+</body>
